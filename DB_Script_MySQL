@@ -1,0 +1,16 @@
+CREATE DATABASE mylibrary;
+
+USE mylibrary;
+
+CREATE TABLE tbl_Book (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    isbn VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE tbl_Borrower (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL
+);
